@@ -23,12 +23,14 @@ installed on your system
 ```
 
 ## Assignment 2
-# Should give output 1 (See desired outputs below)
-php assignment2.php
+Should give output 1 (See desired outputs below)
+
+`php assignment2.php`
  
-# Should give output 2 (See desired outputs below)
-php assignment2.php --instances 2 --instance-type t2.small 
-  --allow-ssh-from 172.16.8.30
+Should give output 2 (See desired outputs below)
+
+`php assignment2.php --instances 2 --instance-type t2.small 
+  --allow-ssh-from 172.16.8.30`
  
 In addition, both commands for assignment #2 should render a 
 HTML page with clear syntax highlighting. You can earn bonus 
