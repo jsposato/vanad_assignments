@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <!-- Link to the stylesheets: -->
+        <link rel="stylesheet" type="text/css" href="styles/obsidian.css">
+    </head>
+    <body>
+        <!-- Print the highlighted code: -->
+        <pre class="hljs <?=json?>"><?={
+    "<span class="hljs-attr">AWSTemplateFormatVersion</span>": <span class="hljs-string">"2010-09-09"</span>,
+    "<span class="hljs-attr">Outputs</span>": {
+        "<span class="hljs-attr">PublicIp</span>": {
+            "<span class="hljs-attr">Description</span>": <span class="hljs-string">"Public IP address of the newly created EC2 instance"</span>,
+            "<span class="hljs-attr">Value</span>": {
+                "<span class="hljs-attr">Fn::GetAtt</span>": [
+                    <span class="hljs-string">"EC2Instance"</span>,
+                    <span class="hljs-string">"PublicIp"</span>
+                ]
+            }
+        }
+    },
+    "<span class="hljs-attr">Resources</span>": {
+        "<span class="hljs-attr">EC2Instance</span>": {
+            "<span class="hljs-attr">Properties</span>": {
+                "<span class="hljs-attr">ImageId</span>": <span class="hljs-string">"ami-b97a12ce"</span>,
+                "<span class="hljs-attr">InstanceType</span>": <span class="hljs-string">"c4.4xlarge"</span>,
+                "<span class="hljs-attr">SecurityGroups</span>": {
+                    "<span class="hljs-attr">Ref</span>": <span class="hljs-string">"InstanceSecurityGroup"</span>
+                }
+            },
+            "<span class="hljs-attr">Type</span>": <span class="hljs-string">"AWS::EC2::Instance"</span>
+        },
+        "<span class="hljs-attr">EC2Instance2</span>": {
+            "<span class="hljs-attr">Properties</span>": {
+                "<span class="hljs-attr">ImageId</span>": <span class="hljs-string">"ami-b97a12ce"</span>,
+                "<span class="hljs-attr">InstanceType</span>": <span class="hljs-string">"c4.4xlarge"</span>,
+                "<span class="hljs-attr">SecurityGroups</span>": {
+                    "<span class="hljs-attr">Ref</span>": <span class="hljs-string">"InstanceSecurityGroup"</span>
+                }
+            },
+            "<span class="hljs-attr">Type</span>": <span class="hljs-string">"AWS::EC2::Instance"</span>
+        },
+        "<span class="hljs-attr">EC2Instance3</span>": {
+            "<span class="hljs-attr">Properties</span>": {
+                "<span class="hljs-attr">ImageId</span>": <span class="hljs-string">"ami-b97a12ce"</span>,
+                "<span class="hljs-attr">InstanceType</span>": <span class="hljs-string">"c4.4xlarge"</span>,
+                "<span class="hljs-attr">SecurityGroups</span>": {
+                    "<span class="hljs-attr">Ref</span>": <span class="hljs-string">"InstanceSecurityGroup"</span>
+                }
+            },
+            "<span class="hljs-attr">Type</span>": <span class="hljs-string">"AWS::EC2::Instance"</span>
+        },
+        "<span class="hljs-attr">EC2Instance4</span>": {
+            "<span class="hljs-attr">Properties</span>": {
+                "<span class="hljs-attr">ImageId</span>": <span class="hljs-string">"ami-b97a12ce"</span>,
+                "<span class="hljs-attr">InstanceType</span>": <span class="hljs-string">"c4.4xlarge"</span>,
+                "<span class="hljs-attr">SecurityGroups</span>": {
+                    "<span class="hljs-attr">Ref</span>": <span class="hljs-string">"InstanceSecurityGroup"</span>
+                }
+            },
+            "<span class="hljs-attr">Type</span>": <span class="hljs-string">"AWS::EC2::Instance"</span>
+        },
+        "<span class="hljs-attr">InstanceSecurityGroup</span>": {
+            "<span class="hljs-attr">Properties</span>": {
+                "<span class="hljs-attr">GroupDescription</span>": <span class="hljs-string">"Enable SSH access via port 22"</span>,
+                "<span class="hljs-attr">SecurityGroupIngress</span>": {
+                    "<span class="hljs-attr">CidrIp</span>": <span class="hljs-string">"192.168.1.1"</span>,
+                    "<span class="hljs-attr">FromPort</span>": <span class="hljs-string">"22"</span>,
+                    "<span class="hljs-attr">IpProtocol</span>": <span class="hljs-string">"tcp"</span>,
+                    "<span class="hljs-attr">ToPort</span>": <span class="hljs-string">"22"</span>
+                }
+            },
+            "<span class="hljs-attr">Type</span>": <span class="hljs-string">"AWS::EC2::SecurityGroup"</span>
+        }
+    }
+}</pre>
+</body>
+</html>

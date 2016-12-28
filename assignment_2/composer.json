@@ -1,0 +1,19 @@
+{
+  "name": "jsposato/assignment_2",
+  "description": "2nd Assignment for Vanad",
+  "type": "project",
+  "require": {
+    "phpunit/phpunit": "^5.7",
+    "squizlabs/php_codesniffer": "^2.7",
+    "scrivo/highlight.php": "^9.0",
+    "aws/aws-sdk-php": "~3.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "John Sposato Jr",
+      "email": "jsposato@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
